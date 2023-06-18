@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
-    <script src="style.js"></script>
 </head>
 <body>
 
@@ -17,7 +16,7 @@
     <div class="toggleBtn"></div>
     <div class="calculator">
         <div class="buttons">
-            <h2 id="value">Calculadora</h2>
+            <h2 id="value"></h2>
             <span id="clear">Clear</span>
             <span>/</span>
             <span>*</span>
@@ -38,14 +37,16 @@
             <span id="equal">=</span>
         </div>
     </div>
+
+<!--
     <script>
         let buttons = document.querySelector('.buttons');
         let btn = document.querySelectorAll('span');
         let value = document.getElementById('value');
         let toggleBtn = document.querySelector('.toggleBtn');
         let body = document.querySelector('body');
-
-
+        
+        
         for(let i=0;  i<btn.length;i++)
         {
             btn[i] .addEventListener("click", function(){
@@ -60,14 +61,17 @@
                         value.innerHTML += this.innerHTML;
                     }
                 }
-
+                
             })
         }
-
+        
         toggleBtn.onclick = function()
         {
             body.classList.toggle('dark');
         }
     </script>
+-->
+
+<script src="style.js"></script>
 </body>
 </html>
